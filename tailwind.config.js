@@ -15,7 +15,8 @@ module.exports = {
         }
       },
       fontFamily: {
-        body: ['Inter']
+        body: ['Inter'],
+        lexand: ['Lexend Deca']
       }
     },
   },

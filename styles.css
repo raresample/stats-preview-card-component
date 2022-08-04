@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
 /*
 ! tailwindcss v3.1.7 | MIT License | https://tailwindcss.com
 */
@@ -566,8 +568,30 @@ h2{
   --tw-backdrop-sepia:  ;
 }
 
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .grow{
   flex-grow: 1;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .rounded{
@@ -584,8 +608,14 @@ h2{
   background-color: hsl(244 38% 16% / var(--tw-bg-opacity));
 }
 
-.p-8{
-  padding: 2rem;
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .text-center{
@@ -601,13 +631,12 @@ h2{
   line-height: 2.25rem;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .font-bold{
   font-weight: 700;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .text-white{
@@ -620,11 +649,54 @@ h2{
   color: hsl(277 64% 61% / var(--tw-text-opacity));
 }
 
-.text-primary-750{
-  color: hsla(0, 0%, 100%, 0.75);
+.placeholder-sky-800::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(7 89 133 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-sky-800:-ms-input-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(7 89 133 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-sky-800::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(7 89 133 / var(--tw-placeholder-opacity));
 }
 
 main {
   width: 375px;
   margin: auto;
+}
+
+#overlay {
+  padding:10px;
+  position:absolute;
+  background-color:hsl(277, 64%, 61%);
+  opacity:0.5;
+  /* -> transparency 50% */
+  height: 275px;
+  /* -> image_height - padding */
+  width: 375px;
+  /* -> image_width - padding */
+  z-index:1;
+  /* -> put overlay over image */
+  border-radius: 4px 4px 0 0;
+}
+
+.discover{
+  margin: 1rem;
+  padding-bottom: 1.5rem;
+  font-size: 0.875rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5rem;
+}
+
+.stat{
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: hsla(0, 0%, 100%, 0.6);
 }
