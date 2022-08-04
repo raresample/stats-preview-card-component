@@ -33,5 +33,5 @@ main {
 }
 
 .stat {
-  @apply text-primary-600 uppercase text-xs tracking-widest mt-1;
+  @apply font-lexand text-primary-600 uppercase text-xs tracking-widest mt-1;
 }
