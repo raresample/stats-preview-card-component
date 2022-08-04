@@ -27,12 +27,12 @@ main {
   border-radius: 4px 4px 0 0;
 }
 
-.desktop-image {
+.fm-image {
   display: none;
 }
 
 .discover {
-  @apply text-sm text-primary-750 m-4 desktop:m-0 pb-6 desktop:p-0;
+  @apply text-sm text-primary-750 m-4 fm:m-0 pb-6 fm:p-0;
   line-height: 1.5rem;
 }
 
@@ -63,7 +63,7 @@ main {
   .mobile-image {
     display: none;
   }
-  .desktop-image {
+  .fm-image {
     display: block;
   }
 

@@ -586,10 +586,6 @@ h2{
   margin-bottom: 0.5rem;
 }
 
-.flex{
-  display: flex;
-}
-
 .flex-1{
   flex: 1 1 0%;
 }
@@ -606,40 +602,8 @@ h2{
   flex-direction: column;
 }
 
-.content-center{
-  align-content: center;
-}
-
-.content-end{
-  align-content: flex-end;
-}
-
-.content-between{
-  align-content: space-between;
-}
-
-.items-end{
-  align-items: flex-end;
-}
-
-.items-center{
-  align-items: center;
-}
-
-.items-baseline{
-  align-items: baseline;
-}
-
-.justify-start{
-  justify-content: flex-start;
-}
-
 .justify-between{
   justify-content: space-between;
-}
-
-.justify-around{
-  justify-content: space-around;
 }
 
 .justify-evenly{
@@ -725,7 +689,7 @@ main {
   border-radius: 4px 4px 0 0;
 }
 
-.desktop-image {
+.fm-image {
   display: none;
 }
 
@@ -786,7 +750,7 @@ main {
     display: none;
   }
 
-  .desktop-image {
+  .fm-image {
     display: block;
   }
 
@@ -797,48 +761,23 @@ main {
 }
 
 @media (min-width: 1440px){
-  .desktop\:m-0{
-    margin: 0px;
-  }
-
-  .desktop\:my-0{
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .desktop\:mt-6{
-    margin-top: 1.5rem;
-  }
-
-  .desktop\:mb-6{
+  .fm\:mb-6{
     margin-bottom: 1.5rem;
   }
 
-  .desktop\:mb-0{
-    margin-bottom: 0px;
-  }
-
-  .desktop\:mt-12{
-    margin-top: 3rem;
-  }
-
-  .desktop\:flex{
+  .fm\:flex{
     display: flex;
   }
 
-  .desktop\:p-16{
+  .fm\:p-16{
     padding: 4rem;
   }
 
-  .desktop\:pr-24{
-    padding-right: 6rem;
-  }
-
-  .desktop\:pr-36{
+  .fm\:pr-36{
     padding-right: 9rem;
   }
 
-  .desktop\:text-left{
+  .fm\:text-left{
     text-align: left;
   }
 }
