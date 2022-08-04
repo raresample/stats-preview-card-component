@@ -27,6 +27,10 @@ main {
   border-radius: 4px 4px 0 0;
 }
 
+.desktop-image {
+  display: none;
+}
+
 .discover {
   @apply text-sm text-primary-750 m-4 pb-6;
   line-height: 1.5rem;
@@ -34,4 +38,25 @@ main {
 
 .stat {
   @apply font-lexand text-primary-600 uppercase text-xs tracking-widest mt-1;
+}
+
+
+@media(min-width:1440px) {
+  #overlay {
+    padding:10px;
+    position:absolute;
+    background-color:hsl(277, 64%, 61%);
+    opacity:0.5;    /* -> transparency 50% */
+    height: 310px;   /* -> image_height - padding */
+    width: 375px;    /* -> image_width - padding */
+    z-index:1;      /* -> put overlay over image */
+    border-radius: 0 4px 4px 0;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+  .desktop-image {
+    display: block;
+  }
 }
