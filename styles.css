@@ -586,8 +586,64 @@ h2{
   margin-bottom: 0.5rem;
 }
 
+.flex{
+  display: flex;
+}
+
+.flex-1{
+  flex: 1 1 0%;
+}
+
 .grow{
   flex-grow: 1;
+}
+
+.flex-row-reverse{
+  flex-direction: row-reverse;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.content-center{
+  align-content: center;
+}
+
+.content-end{
+  align-content: flex-end;
+}
+
+.content-between{
+  align-content: space-between;
+}
+
+.items-end{
+  align-items: flex-end;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.items-baseline{
+  align-items: baseline;
+}
+
+.justify-start{
+  justify-content: flex-start;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.justify-around{
+  justify-content: space-around;
+}
+
+.justify-evenly{
+  justify-content: space-evenly;
 }
 
 .overflow-hidden{
@@ -649,21 +705,6 @@ h2{
   color: hsl(277 64% 61% / var(--tw-text-opacity));
 }
 
-.placeholder-sky-800::-moz-placeholder{
-  --tw-placeholder-opacity: 1;
-  color: rgb(7 89 133 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-sky-800:-ms-input-placeholder{
-  --tw-placeholder-opacity: 1;
-  color: rgb(7 89 133 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-sky-800::placeholder{
-  --tw-placeholder-opacity: 1;
-  color: rgb(7 89 133 / var(--tw-placeholder-opacity));
-}
-
 main {
   width: 375px;
   margin: auto;
@@ -692,7 +733,18 @@ main {
   margin: 1rem;
   padding-bottom: 1.5rem;
   font-size: 0.875rem;
+  line-height: 1.25rem;
   color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media (min-width: 1440px){
+  .discover{
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+.discover {
   line-height: 1.5rem;
 }
 
@@ -707,15 +759,23 @@ main {
 }
 
 @media(min-width:1440px) {
+  main {
+    width: 1080px;
+  }
+
+  .image {
+    width: 540px;
+  }
+
   #overlay {
     padding:10px;
     position:absolute;
     background-color:hsl(277, 64%, 61%);
     opacity:0.5;
     /* -> transparency 50% */
-    height: 310px;
+    height: 446px;
     /* -> image_height - padding */
-    width: 375px;
+    width: 540px;
     /* -> image_width - padding */
     z-index:1;
     /* -> put overlay over image */
@@ -728,5 +788,57 @@ main {
 
   .desktop-image {
     display: block;
+  }
+
+  .card {
+    width: 540px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1440px){
+  .desktop\:m-0{
+    margin: 0px;
+  }
+
+  .desktop\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .desktop\:mt-6{
+    margin-top: 1.5rem;
+  }
+
+  .desktop\:mb-6{
+    margin-bottom: 1.5rem;
+  }
+
+  .desktop\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .desktop\:mt-12{
+    margin-top: 3rem;
+  }
+
+  .desktop\:flex{
+    display: flex;
+  }
+
+  .desktop\:p-16{
+    padding: 4rem;
+  }
+
+  .desktop\:pr-24{
+    padding-right: 6rem;
+  }
+
+  .desktop\:pr-36{
+    padding-right: 9rem;
+  }
+
+  .desktop\:text-left{
+    text-align: left;
   }
 }
