@@ -46,9 +46,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ## My process
 
 * setup tailwindcss
-* custom colors and fonts
-* divide index.html body into elements, add images
+* divide index.html body into elements, add image
 * define custom colors and fontFamily in tailwind.config.js
+* mobile styles first, from the top down
+* then desktop, including image swap and custom breakpoint in tailwind.config.js for responsive classes
 
 
 ### Built with
